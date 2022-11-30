@@ -70,17 +70,21 @@ class MainActivity : AppCompatActivity(), MovieClickListener{
             val searchedMovies = movies.filter { m : Movie -> m.title?.lowercase()?.contains(keyword.lowercase())
                 ?: false }
                 rv_movies_list.adapter = MovieAdapter(searchedMovies, this)
-            println(searchedMovies)
+
     }
 
     }
 
     private fun getDetails(movie : Movie){
-        startActivity(Intent(this, DetailsActivity::class.java))
+        intent = Intent(this, DetailsActivity()::class.java)
+        intent.putExtra("title", movie.title)
+        intent.putExtra("plot", movie.overview)
+        intent.putExtra("release_date", movie.release)
+        startActivity(intent)
+
         }
 
     override fun onMovieClicked(movie: Movie) {
-        println(movie)
         getDetails(movie)
     }
 
