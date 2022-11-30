@@ -22,6 +22,7 @@ class DetailsActivity() : AppCompatActivity() {
 
         detail_title.setText(title)
         detail_plot.setText(plot)
+        detail_release.setText("Release date: " + release)
 
         back_button.setOnClickListener {
             intent = Intent(this, MainActivity()::class.java)

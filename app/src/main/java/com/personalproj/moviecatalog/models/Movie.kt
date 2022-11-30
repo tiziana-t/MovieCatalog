@@ -20,8 +20,11 @@ data class Movie(
     val release : String ?,
 
     @SerializedName("overview")
-    val overview : String ?
+    val overview : String ?,
+
+    @SerializedName("vote_average")
+    val vote_average: Number
 
 ) : Parcelable{
-    constructor() : this("", "", "", "", "")
+    constructor() : this("", "", "", "", "", 0)
 }
