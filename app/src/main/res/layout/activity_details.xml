@@ -44,16 +44,28 @@
         app:layout_constraintVertical_bias="0.236" />
 
     <Button
+        android:id="@+id/review_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="458dp"
+        android:text="Post your review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_plot" />
+
+    <Button
         android:id="@+id/back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="249dp"
+        android:layout_marginStart="284dp"
         android:layout_marginTop="70dp"
-        android:layout_marginEnd="74dp"
         android:layout_marginBottom="458dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_plot" />
 
